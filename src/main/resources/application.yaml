@@ -1,0 +1,42 @@
+spring:
+  application:
+    name: hexagonal-spring-boot-template
+  profiles:
+    default: dev
+  jackson:
+    serialization:
+      indent_output: true
+    deserialization:
+      fail-on-unknown-properties: false
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+    schemas: public
+    baseline-on-migrate: true
+    validate-on-migrate: true
+    sql-migration-separator: __
+    sql-migration-prefix: V
+    repeatable-sql-migration-prefix: R
+    sql-migration-suffixes: .sql
+
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+
+# ── JWT ──────────────────────────────────────────────────────────────────────
+# Override JWT_SECRET (min 32 chars) and JWT_EXPIRATION_MS via .env or env vars.
+app:
+  jwt:
+    secret: ${JWT_SECRET:change-me-in-production-min-32-chars!!}
+    expiration-ms: ${JWT_EXPIRATION_MS:86400000}

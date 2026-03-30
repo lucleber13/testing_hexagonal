@@ -1,6 +1,6 @@
 spring:
   application:
-    name: hexagonal-spring-boot-template
+    name: testing_hexagonal
   profiles:
     default: dev
   jackson:

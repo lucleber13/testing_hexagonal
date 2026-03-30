@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.cbcode</groupId>
-    <artifactId>hexagonal-spring-boot-template</artifactId>
+    <artifactId>testing_hexagonal</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>hexagonal-spring-boot-template</name>
-    <description>hexagonal-spring-boot-template</description>
+    <name>testing-hexagonal</name>
+    <description>testing-hexagonal</description>
     <url/>
     <licenses>
         <license/>

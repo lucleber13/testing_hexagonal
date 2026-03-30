@@ -1,7 +1,7 @@
 # hexagonal-spring-boot-template
 
 ## Project Overview
-Spring Boot 4.0.5 hexagonal architecture template. Base package: `com.cbcode.hexagonalspringboottemplate`.
+Spring Boot 4.0.5 hexagonal architecture template. Base package: `com.cbcode.testinghexagonal`.
 Java 26, Maven, PostgreSQL (runtime), H2 (test), Flyway, Spring Security + JWT (jjwt 0.13.0), Argon2 (bcprov), Jakarta Validation.
 
 ## Package Structure (src/main/java/.../hexagonalspringboottemplate/)

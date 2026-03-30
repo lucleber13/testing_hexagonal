@@ -1,0 +1,13 @@
+package com.cbcode.testinghexagonal;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class testingHexagonalApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(testingHexagonalApplication.class, args);
+	}
+
+}
